@@ -1,0 +1,9 @@
+const countries = [
+  { name: "China", population: 1444216107 },
+  { name: "India", population: 1393409038 },
+  { name: "United States", population: 331002651 }
+];
+
+const totalPopulation = countries.reduce((total, country) => total + country.population, 0);
+
+console.log("Total population of countries:", totalPopulation);

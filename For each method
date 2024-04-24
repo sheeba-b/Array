@@ -1,0 +1,9 @@
+const country = {
+    name: "United States",
+    capital: "Washington, D.C.",
+    flag: "🇺🇸"
+  };
+  
+  for (let key in country) {
+    console.log('${key}: ${country[key]}');
+  }

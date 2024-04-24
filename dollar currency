@@ -1,0 +1,12 @@
+const countries = [
+  { name: "United States", currency: "USD" },
+  { name: "Ecuador", currency: "USD" },
+  { name: "Zimbabwe", currency: "USD" },
+  { name: "Panama", currency: "USD" },
+  // Add more countries as needed
+];
+
+const usDollarCountries = countries.filter(country => country.currency === "USD");
+
+console.log("Countries that use US dollars as currency:");
+usDollarCountries.forEach(country => console.log(country.name));

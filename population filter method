@@ -1,0 +1,10 @@
+const countries = [
+  { name: "India", population: 1393409038 },   // India's population is approximately 1.39 billion
+  { name: "Pakistan", population: 225199937 }, // Pakistan's population is approximately 225 million
+  { name: "Bangladesh", population: 164689383 }, // Bangladesh's population is approximately 164 million
+  { name: "Sri Lanka", population: 21413249 }, // Sri Lanka's population is approximately 21 million
+  // Add more countries as needed
+];
+
+const countriesWithLessPopulation = countries.filter(country => country.population < 200000); // Assuming "2 lakhs" means 200,000
+console.log(countriesWithLessPopulation.map(country => country.name));

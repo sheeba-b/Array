@@ -1,0 +1,11 @@
+const countries = [
+  { name: "Afghanistan", continent: "Asia" },
+  { name: "Bangladesh", continent: "Asia" },
+  { name: "China", continent: "Asia" },
+  { name: "India", continent: "Asia" },
+  { name: "Japan", continent: "Asia" },
+  // Add more countries as needed
+];
+
+const asianCountries = countries.filter(country => country.continent === "Asia");
+console.log(asianCountries.map(country => country.name));
